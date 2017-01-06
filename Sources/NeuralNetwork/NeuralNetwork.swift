@@ -11,6 +11,10 @@ import Linear
 public struct NeuralNetwork {
     public var layers: [NeuralNetworkLayer]
     
+    public init(layers: [NeuralNetworkLayer]) {
+        self.layers = layers
+    }
+    
     public func forwardPropagate(_ X: Matrix) -> Matrix {
         var currentInput = X
         for layer in layers {
@@ -92,11 +96,11 @@ public struct NeuralNetwork {
     }
     
     
-    internal func getAllWeights() -> [Matrix] {
+    public func getAllWeights() -> [Matrix] {
         return layers.map { layer in layer.weights }
     }
     
-    internal mutating func setAllWeights(_ weights: [Matrix]) {
+    public mutating func setAllWeights(_ weights: [Matrix]) {
         for i in 0..<layers.count {
             layers[i].weights = weights[i]
         }
