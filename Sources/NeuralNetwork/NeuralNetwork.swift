@@ -96,58 +96,60 @@ public struct NeuralNetwork {
     }
     
     
-    public func getAllWeights() -> [Matrix] {
-        return layers.map { layer in layer.weights }
+    public func getAllWeights() -> Matrix {
+        return Matrix.unrollToColumnVector(Xs: layers.map { layer in layer.weights }).column
     }
     
-    public mutating func setAllWeights(_ weights: [Matrix]) {
+    public mutating func setAllWeights(_ weightsColumn: Matrix) {
+        let weights = Matrix.rollColumnVectorToMatrices(column: weightsColumn, sizes: layers.map { ($0.weights.height, $0.weights.width) })
+        
         for i in 0..<layers.count {
             layers[i].weights = weights[i]
         }
     }
     
-    // Don't use this for actual machine learning, only debugging
-    // TODO: Refactor into separate routine independent of the model.
-    public mutating func numericalDerivative(X: Matrix, Y: Matrix, lambda: Double) -> (cost: Double, derivative: [Matrix]) {
-        let oldWeights = getAllWeights()
-        
-        let cost = self.cost(X: X, Y: Y, lambda: lambda)
-        
-        var derivs = layers.map { l in
-            Matrix.zeros(l.weights.height, l.weights.width)
-        }
-        
-        let e = 1e-4
-        
-        var tweakedWeightsLeft = oldWeights
-        var tweakedWeightsRight = oldWeights
-
-        for l in 0..<layers.count {
-            for r in 0..<layers[l].weights.height {
-                for c in 0..<layers[l].weights.width {
-                    let old = tweakedWeightsLeft[l][r, c]
-
-                    tweakedWeightsLeft[l][r, c] -= e
-                    tweakedWeightsRight[l][r, c] += e
-
-                    setAllWeights(tweakedWeightsLeft)
-                    let costLeft = self.cost(X: X, Y: Y, lambda: lambda)
-                    
-                    setAllWeights(tweakedWeightsRight)
-                    let costRight = self.cost(X: X, Y: Y, lambda: lambda)
-                    
-                    derivs[l][r, c] = (costRight - costLeft) / (2*e)
-                    
-                    tweakedWeightsLeft[l][r, c] = old
-                    tweakedWeightsRight[l][r, c] = old
-                }
-            }
-        }
-        
-        
-        setAllWeights(oldWeights)
-        
-        return (cost, derivs)
-    }
+//    // Don't use this for actual machine learning, only debugging
+//    // TODO: Refactor into separate routine independent of the model.
+//    public mutating func numericalDerivative(X: Matrix, Y: Matrix, lambda: Double) -> (cost: Double, derivative: [Matrix]) {
+//        let oldWeights = getAllWeights()
+//        
+//        let cost = self.cost(X: X, Y: Y, lambda: lambda)
+//        
+//        var derivs = layers.map { l in
+//            Matrix.zeros(l.weights.height, l.weights.width)
+//        }
+//        
+//        let e = 1e-4
+//        
+//        var tweakedWeightsLeft = oldWeights
+//        var tweakedWeightsRight = oldWeights
+//
+//        for l in 0..<layers.count {
+//            for r in 0..<layers[l].weights.height {
+//                for c in 0..<layers[l].weights.width {
+//                    let old = tweakedWeightsLeft[l][r, c]
+//
+//                    tweakedWeightsLeft[l][r, c] -= e
+//                    tweakedWeightsRight[l][r, c] += e
+//
+//                    setAllWeights(tweakedWeightsLeft)
+//                    let costLeft = self.cost(X: X, Y: Y, lambda: lambda)
+//                    
+//                    setAllWeights(tweakedWeightsRight)
+//                    let costRight = self.cost(X: X, Y: Y, lambda: lambda)
+//                    
+//                    derivs[l][r, c] = (costRight - costLeft) / (2*e)
+//                    
+//                    tweakedWeightsLeft[l][r, c] = old
+//                    tweakedWeightsRight[l][r, c] = old
+//                }
+//            }
+//        }
+//        
+//        
+//        setAllWeights(oldWeights)
+//        
+//        return (cost, derivs)
+//    }
 }
 

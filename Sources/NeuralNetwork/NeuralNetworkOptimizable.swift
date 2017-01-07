@@ -17,7 +17,7 @@ public struct NeuralNetworkOptimizable: Optimizable {
     public let batchSize: Int
     public let lambda: Double
     var currentTrainingIndex: Int = 0
-    
+        
     public init(network: NeuralNetwork, X: Matrix, Y: Matrix, lambda: Double = 0, batchSize: Int = -1) {
         precondition(X.width == Y.width)
         
@@ -33,11 +33,11 @@ public struct NeuralNetworkOptimizable: Optimizable {
         self.lambda = lambda
     }
     
-    public func initialParameters() -> [Matrix] {
+    public func initialParameters() -> Matrix {
         return network.getAllWeights()
     }
 
-    mutating public func costFunction(_ P: [Matrix]) -> (cost: Double, derivative: [Matrix]) {
+    mutating public func costFunction(_ P: Matrix) -> (cost: Double, derivative: Matrix) {
 //        let numDer = network.numericalDerivative(X: X, Y: Y)
         
         network.setAllWeights(P)
@@ -52,7 +52,8 @@ public struct NeuralNetworkOptimizable: Optimizable {
             currentTrainingIndex = 0
         }
         
-        return network.backPropagate(X: Xs, Y: Ys, lambda: lambda)
+        let (cost, derivs) = network.backPropagate(X: Xs, Y: Ys, lambda: lambda)
+        return (cost, Matrix.unrollToColumnVector(Xs: derivs).column)
 //        return numDer
     }
 
