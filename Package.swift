@@ -3,6 +3,6 @@ import PackageDescription
 let package = Package(
     name: "SwiftLearn",
     dependencies: [
-        .Package(url: "../SwiftNum", Version(1, 9, 6))
+        .Package(url: "https://github.com/donald-pinckney/SwiftNum", Version(1, 9, 7))
     ]
 )

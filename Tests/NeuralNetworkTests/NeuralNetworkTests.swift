@@ -94,7 +94,9 @@ class NeuralNetworkTests: XCTestCase {
             correct += maxIndex == correctMaxIndex ? 1 : 0
         }
         
-        print("70/30 Testing set accuracy: \(100 * Double(correct) / Double(Y_test.width))%")
+        let accuracy = Double(correct) / Double(Y_test.width)
+        print("70/30 Testing set accuracy: \(100 * accuracy)%")
+        XCTAssertGreaterThanOrEqual(accuracy, 0.9)
     }
 
 

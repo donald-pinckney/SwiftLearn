@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50FB4D541E23928200FCB915 /* MNIST_layer0_init.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D501E23928200FCB915 /* MNIST_layer0_init.csv */; };
-		50FB4D551E23928200FCB915 /* MNIST_layer1_init.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D511E23928200FCB915 /* MNIST_layer1_init.csv */; };
-		50FB4D561E23928200FCB915 /* MNIST_X.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D521E23928200FCB915 /* MNIST_X.csv */; };
-		50FB4D571E23928200FCB915 /* MNIST_Y.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D531E23928200FCB915 /* MNIST_Y.csv */; };
+		50FB4D691E239CE500FCB915 /* MNIST_layer0_init.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D651E239CE500FCB915 /* MNIST_layer0_init.csv */; };
+		50FB4D6A1E239CE500FCB915 /* MNIST_layer1_init.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D661E239CE500FCB915 /* MNIST_layer1_init.csv */; };
+		50FB4D6B1E239CE500FCB915 /* MNIST_X.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D671E239CE500FCB915 /* MNIST_X.csv */; };
+		50FB4D6C1E239CE500FCB915 /* MNIST_Y.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D681E239CE500FCB915 /* MNIST_Y.csv */; };
 		OBJ_106 /* FileHandleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* FileHandleExtensions.swift */; };
 		OBJ_107 /* Plotting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Plotting.swift */; };
 		OBJ_114 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* FFT.swift */; };
@@ -60,84 +60,84 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		50FB4D431E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D581E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_65;
 			remoteInfo = Linear;
 		};
-		50FB4D441E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D591E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_58;
 			remoteInfo = GeneralMath;
 		};
-		50FB4D451E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D5A1E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_65;
 			remoteInfo = Linear;
 		};
-		50FB4D461E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D5B1E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_90;
 			remoteInfo = Optimization;
 		};
-		50FB4D471E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D5C1E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_101;
 			remoteInfo = Plotting;
 		};
-		50FB4D481E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D5D1E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_109;
 			remoteInfo = SignalProcessing;
 		};
-		50FB4D491E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D5E1E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_58;
 			remoteInfo = GeneralMath;
 		};
-		50FB4D4A1E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D5F1E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_65;
 			remoteInfo = Linear;
 		};
-		50FB4D4B1E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D601E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_90;
 			remoteInfo = Optimization;
 		};
-		50FB4D4C1E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D611E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_101;
 			remoteInfo = Plotting;
 		};
-		50FB4D4D1E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D621E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_109;
 			remoteInfo = SignalProcessing;
 		};
-		50FB4D4E1E23925600FCB915 /* PBXContainerItemProxy */ = {
+		50FB4D631E239CA300FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -147,10 +147,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		50FB4D501E23928200FCB915 /* MNIST_layer0_init.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_layer0_init.csv; sourceTree = "<group>"; };
-		50FB4D511E23928200FCB915 /* MNIST_layer1_init.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_layer1_init.csv; sourceTree = "<group>"; };
-		50FB4D521E23928200FCB915 /* MNIST_X.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_X.csv; sourceTree = "<group>"; };
-		50FB4D531E23928200FCB915 /* MNIST_Y.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_Y.csv; sourceTree = "<group>"; };
+		50FB4D651E239CE500FCB915 /* MNIST_layer0_init.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_layer0_init.csv; sourceTree = "<group>"; };
+		50FB4D661E239CE500FCB915 /* MNIST_layer1_init.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_layer1_init.csv; sourceTree = "<group>"; };
+		50FB4D671E239CE500FCB915 /* MNIST_X.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_X.csv; sourceTree = "<group>"; };
+		50FB4D681E239CE500FCB915 /* MNIST_Y.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_Y.csv; sourceTree = "<group>"; };
 		OBJ_11 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		OBJ_12 /* MatrixAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAddition.swift; sourceTree = "<group>"; };
 		OBJ_13 /* MatrixComponentWiseFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixComponentWiseFunction.swift; sourceTree = "<group>"; };
@@ -284,7 +284,7 @@
 				OBJ_29 /* XCTestMatrixHelpers.swift */,
 			);
 			name = Linear;
-			path = "Packages/SwiftNum-1.9.6/Sources/Linear";
+			path = "Packages/SwiftNum-1.9.7/Sources/Linear";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_30 /* Optimization */ = {
@@ -295,7 +295,7 @@
 				OBJ_33 /* Optimizable.swift */,
 			);
 			name = Optimization;
-			path = "Packages/SwiftNum-1.9.6/Sources/Optimization";
+			path = "Packages/SwiftNum-1.9.7/Sources/Optimization";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_34 /* Plotting */ = {
@@ -305,7 +305,7 @@
 				OBJ_36 /* Plotting.swift */,
 			);
 			name = Plotting;
-			path = "Packages/SwiftNum-1.9.6/Sources/Plotting";
+			path = "Packages/SwiftNum-1.9.7/Sources/Plotting";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_37 /* SignalProcessing */ = {
@@ -316,7 +316,7 @@
 				OBJ_40 /* Windowing.swift */,
 			);
 			name = SignalProcessing;
-			path = "Packages/SwiftNum-1.9.6/Sources/SignalProcessing";
+			path = "Packages/SwiftNum-1.9.7/Sources/SignalProcessing";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_41 /* NeuralNetwork */ = {
@@ -342,10 +342,10 @@
 		OBJ_47 /* NeuralNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				50FB4D501E23928200FCB915 /* MNIST_layer0_init.csv */,
-				50FB4D511E23928200FCB915 /* MNIST_layer1_init.csv */,
-				50FB4D521E23928200FCB915 /* MNIST_X.csv */,
-				50FB4D531E23928200FCB915 /* MNIST_Y.csv */,
+				50FB4D651E239CE500FCB915 /* MNIST_layer0_init.csv */,
+				50FB4D661E239CE500FCB915 /* MNIST_layer1_init.csv */,
+				50FB4D671E239CE500FCB915 /* MNIST_X.csv */,
+				50FB4D681E239CE500FCB915 /* MNIST_Y.csv */,
 				OBJ_48 /* NeuralNetworkTests.swift */,
 				OBJ_49 /* XCTestMatrixHelpers.swift */,
 			);
@@ -397,7 +397,7 @@
 				OBJ_9 /* Random.swift */,
 			);
 			name = GeneralMath;
-			path = "Packages/SwiftNum-1.9.6/Sources/GeneralMath";
+			path = "Packages/SwiftNum-1.9.7/Sources/GeneralMath";
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -462,7 +462,7 @@
 			buildPhases = (
 				OBJ_142 /* Sources */,
 				OBJ_145 /* Frameworks */,
-				50FB4D4F1E23927500FCB915 /* Resources */,
+				50FB4D641E239CDA00FCB915 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -560,14 +560,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		50FB4D4F1E23927500FCB915 /* Resources */ = {
+		50FB4D641E239CDA00FCB915 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50FB4D571E23928200FCB915 /* MNIST_Y.csv in Resources */,
-				50FB4D551E23928200FCB915 /* MNIST_layer1_init.csv in Resources */,
-				50FB4D561E23928200FCB915 /* MNIST_X.csv in Resources */,
-				50FB4D541E23928200FCB915 /* MNIST_layer0_init.csv in Resources */,
+				50FB4D6C1E239CE500FCB915 /* MNIST_Y.csv in Resources */,
+				50FB4D6A1E239CE500FCB915 /* MNIST_layer1_init.csv in Resources */,
+				50FB4D6B1E239CE500FCB915 /* MNIST_X.csv in Resources */,
+				50FB4D691E239CE500FCB915 /* MNIST_layer0_init.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,62 +663,62 @@
 		OBJ_100 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_65 /* Linear */;
-			targetProxy = 50FB4D431E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D581E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_133 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_58 /* GeneralMath */;
-			targetProxy = 50FB4D441E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D591E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_134 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_65 /* Linear */;
-			targetProxy = 50FB4D451E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D5A1E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_135 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_90 /* Optimization */;
-			targetProxy = 50FB4D461E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D5B1E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_136 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_101 /* Plotting */;
-			targetProxy = 50FB4D471E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D5C1E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_137 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_109 /* SignalProcessing */;
-			targetProxy = 50FB4D481E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D5D1E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_152 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_58 /* GeneralMath */;
-			targetProxy = 50FB4D491E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D5E1E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_153 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_65 /* Linear */;
-			targetProxy = 50FB4D4A1E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D5F1E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_154 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_90 /* Optimization */;
-			targetProxy = 50FB4D4B1E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D601E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_155 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_101 /* Plotting */;
-			targetProxy = 50FB4D4C1E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D611E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_156 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_109 /* SignalProcessing */;
-			targetProxy = 50FB4D4D1E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D621E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 		OBJ_157 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_118 /* NeuralNetwork */;
-			targetProxy = 50FB4D4E1E23925600FCB915 /* PBXContainerItemProxy */;
+			targetProxy = 50FB4D631E239CA300FCB915 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
