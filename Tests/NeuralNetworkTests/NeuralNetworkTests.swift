@@ -3,6 +3,7 @@ import XCTest
 import Linear
 import Optimization
 import Plotting
+import GeneralMath
 
 class NeuralNetworkTests: XCTestCase {
     func testXORLearn() {
@@ -48,8 +49,12 @@ class NeuralNetworkTests: XCTestCase {
 
         var NN = NeuralNetwork(layers: [hiddenLayer, outputLayer])
         
-        let X_all = Matrix(csvURL: X_URL)
-        let Y_all = Matrix(csvURL: Y_URL)
+        let X_all_temp = Matrix(csvURL: X_URL)
+        let Y_all_temp = Matrix(csvURL: Y_URL)
+
+        let perm = randomPermutation(X_all_temp.width)
+        let X_all = X_all_temp[0..<X_all_temp.height, perm]
+        let Y_all = Y_all_temp[0..<Y_all_temp.height, perm]
 
         let M_test = Int(Double(X_all.width) * 0.7)
         let X = X_all[0..<X_all.height, 0..<M_test]
