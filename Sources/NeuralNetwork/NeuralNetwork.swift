@@ -7,6 +7,8 @@
 //
 
 import Linear
+import Dispatch
+import Foundation
 
 public struct NeuralNetwork {
     public var layers: [NeuralNetworkLayer]
@@ -15,11 +17,11 @@ public struct NeuralNetwork {
         self.layers = layers
     }
     
-    public func forwardPropagate(_ X: Matrix) -> Matrix {
+    public mutating func forwardPropagate(_ X: Matrix) -> Matrix {
         var currentInput = X
-        for layer in layers {
-            layer.forwardPropagate(inputs: currentInput)
-            currentInput = layer.currentState.activations
+        for l in 0..<layers.count {
+            layers[l].forwardPropagate(inputs: currentInput)
+            currentInput = layers[l].currentState.activations
         }
         
         return currentInput
@@ -27,7 +29,7 @@ public struct NeuralNetwork {
     
     // X is (in x m), Y is (out x m),
     // where in = # of input dimensions, out = # of output dimensions, m = # of training examples.
-    private func cost(X: Matrix, Y: Matrix, lambda: Double) -> Double {
+    private mutating func cost(X: Matrix, Y: Matrix, lambda: Double) -> Double {
         let m = Double(X.width)
         let H = forwardPropagate(X)
         
@@ -36,63 +38,116 @@ public struct NeuralNetwork {
         for l in layers {
             let params = l.weights[0..<l.weights.height, 1..<l.weights.width]
             if lambda != 0 {
-                regularizationSum += (params .* params).sumColumns().sumRows()[0]
+                regularizationSum += (params .* params).sumAll()
             }
         }
         
-        return -1/m * (Y .* log(H) + (1-Y) .* log(1-H)).sumColumns().sumRows()[0] + lambda / (2*m) * regularizationSum
+        return -1/m * (Y .* log(H) + (1-Y) .* log(1-H)).sumAll() + lambda / (2*m) * regularizationSum
     }
     
     // x and y should be column vectors
     // Precondition, the network has already been forwardPropagated, with x in index exampleIndex
-    private func backPropagateSingle(x: Matrix, y: Matrix, exampleIndex: Int) -> [Matrix] {
-        let last = layers.last!
+    private mutating func backPropagateSingle(x: Matrix, y: Matrix, exampleIndex: Int) -> [Matrix] {
         var derivatives = [Matrix](repeating: Matrix.zeros(1, 1), count: layers.count)
 
-        last.backPropagate(finalCorrectOutputs: y, exampleIndex: exampleIndex)
-        derivatives[layers.count - 1] = last.currentState.outputErrors * last.currentState.inputs[0..<last.currentState.inputs.height, exampleIndex].T
-        derivatives[layers.count - 1] .*= last.constantMask
-        
-        for l in (0..<(layers.count - 1)).reversed() {
-            layers[l].backPropagate(backMultipliedErrorsOfForwardLayer: layers[l+1].currentState.backMultipliedErrors, exampleIndex: exampleIndex)
-            derivatives[l] = layers[l].currentState.outputErrors * layers[l].currentState.inputs[0..<layers[l].currentState.inputs.height, exampleIndex].T
+        for l in (0..<layers.count).reversed() {
+            if l == layers.count - 1 {
+                layers[l].backPropagate(finalCorrectOutputs: y, exampleIndex: exampleIndex)
+            } else {
+                layers[l].backPropagate(backMultipliedErrorsOfForwardLayer: layers[l+1].currentState.backMultipliedErrors, exampleIndex: exampleIndex)
+            }
+            derivatives[l] = layers[l].currentState.outputErrors * layers[l].currentState.inputsT[exampleIndex, 0..<layers[l].currentState.inputsT.width]
             derivatives[l] .*= layers[l].constantMask
         }
         
         return derivatives
     }
     
-    public func backPropagate(X: Matrix, Y: Matrix, lambda: Double) -> (cost: Double, derivative: [Matrix]) {
+    public mutating func backPropagate(X: Matrix, Y: Matrix, lambda: Double) -> (cost: Double, derivative: [Matrix]) {
+        
         let cost = self.cost(X: X, Y: Y, lambda: lambda) // This also performs the forwardPropagate
-        let m = X.width
+        let M = X.width
+        
+        let NUM_THREADS = 8
 
-        var derivativeSum = layers.map { layer in
+        let derivativeSumBlank: ContiguousArray<Matrix> = ContiguousArray(layers.map { layer in
             Matrix.zeros(layer.weights.height, layer.weights.width)
+        })
+        
+        var derivativeSums: ContiguousArray<ContiguousArray<Matrix>> = ContiguousArray(repeating: derivativeSumBlank, count: NUM_THREADS)
+        
+        
+//        let xCols = X.columns
+//        let yCols = Y.columns
+        let layerCount = layers.count
+        
+        let XT = X.T
+        let YT = Y.T
+
+        DispatchQueue.concurrentPerform(iterations: NUM_THREADS) { threadIndex in
+            
+            var network = self
+
+            let mThread: Int
+            if threadIndex < NUM_THREADS - 1 {
+                mThread = M / NUM_THREADS
+            } else {
+                mThread = M - (M / NUM_THREADS * (NUM_THREADS - 1))
+            }
+            
+            let startIndex = threadIndex * (M / NUM_THREADS)
+            let endIndex = startIndex + mThread
+            
+            for i in startIndex..<endIndex {
+//                let xc = xCols[i]
+//                let yc = yCols[i]
+//                let xc = X[0..<X.height, i]
+//                let yc = Y[0..<Y.height, i]
+                let startXDataIdx = i * XT.width
+                let endXDataIdx = (i + 1) * XT.width
+                let startYDataIdx = i * YT.width
+                let endYDataIdx = (i + 1) * YT.width
+                let xc = Matrix(rowMajorData: Array(XT.data[startXDataIdx..<endXDataIdx]), width: 1)
+                let yc = Matrix(rowMajorData: Array(YT.data[startYDataIdx..<endYDataIdx]), width: 1)
+
+                let deriv = network.backPropagateSingle(x: xc, y: yc, exampleIndex: i)
+                for l in 0..<layerCount {
+                    derivativeSums[threadIndex][l] += deriv[l]
+                }
+            }
+            
+            
+//            var network = self
+//            
+//            let xc = xCols[threadIndex]
+//            let yc = yCols[threadIndex]
+//            let deriv = network.backPropagateSingle(x: xc, y: yc, exampleIndex: threadIndex)
+//            for l in 0..<layerCount {
+//                derivativeSums[threadIndex][l] += deriv[l]
+//            }
         }
         
-        let xCols = X.columns
-        let yCols = Y.columns
-        for i in 0..<m {
-            let xc = xCols[i]
-            let yc = yCols[i]
-            let deriv = backPropagateSingle(x: xc, y: yc, exampleIndex: i)
-            for i in 0..<layers.count {
-                derivativeSum[i] += deriv[i]
+        var derivatives = derivativeSums[0]
+        for i in 1..<NUM_THREADS {
+            for l in 0..<layerCount {
+                derivatives[l] += derivativeSums[i][l]
             }
         }
         
-        for i in 0..<layers.count {
-            derivativeSum[i] /= Double(m)
+        for l in 0..<layerCount {
+            derivatives[l] /= Double(M)
             
             if lambda != 0 {
-                let allRows: Range<Int> = 0..<derivativeSum[i].height
-                let noBiasColumn: Range<Int> = 1..<derivativeSum[i].width
-                derivativeSum[i][allRows, noBiasColumn] += lambda / Double(m) * layers[i].weights[allRows, noBiasColumn]
+                let allRows: Range<Int> = 0..<derivatives[l].height
+                let noBiasColumn: Range<Int> = 1..<derivatives[l].width
+                derivatives[l][allRows, noBiasColumn] += lambda / Double(M) * layers[l].weights[allRows, noBiasColumn]
             }
         }
         
         
-        return (cost, derivativeSum)
+//        Dispatch
+        
+        return (cost, Array(derivatives))
     }
     
     
