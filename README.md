@@ -16,5 +16,5 @@ SwiftLearn will proceed to train a neural network on MNIST data.
 
 To use this in a project, just add it to your `Package.swift` file:
 ```swift
-.Package(url: "https://github.com/donald-pinckney/SwiftLearn", Version(x, y, z))
+.Package(url: "https://github.com/donald-pinckney/SwiftLearn", Version(0, 1, 0))
 ```
