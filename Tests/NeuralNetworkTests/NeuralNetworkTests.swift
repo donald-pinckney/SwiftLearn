@@ -60,6 +60,7 @@ class NeuralNetworkTests: XCTestCase {
         let networkOptimizable = NeuralNetworkOptimizable(network: NN, X: X, Y: Y, lambda: 1)
         let cg = ConjugateGradientOptimizer(maxIterations: 1000)
         let (history, optimum) = cg.optimize(networkOptimizable)
+        plot(history)
         
         NN.setAllWeights(optimum)
         

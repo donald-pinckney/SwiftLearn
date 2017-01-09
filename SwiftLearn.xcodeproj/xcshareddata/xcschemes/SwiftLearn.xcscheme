@@ -14,7 +14,21 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_55"
+               BlueprintIdentifier = "OBJ_58"
+               BuildableName = "GeneralMath.framework"
+               BlueprintName = "GeneralMath"
+               ReferencedContainer = "container:SwiftLearn.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "OBJ_65"
                BuildableName = "Linear.framework"
                BlueprintName = "Linear"
                ReferencedContainer = "container:SwiftLearn.xcodeproj">
@@ -28,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_80"
+               BlueprintIdentifier = "OBJ_90"
                BuildableName = "Optimization.framework"
                BlueprintName = "Optimization"
                ReferencedContainer = "container:SwiftLearn.xcodeproj">
@@ -42,7 +56,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_91"
+               BlueprintIdentifier = "OBJ_101"
                BuildableName = "Plotting.framework"
                BlueprintName = "Plotting"
                ReferencedContainer = "container:SwiftLearn.xcodeproj">
@@ -56,7 +70,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_99"
+               BlueprintIdentifier = "OBJ_109"
                BuildableName = "SignalProcessing.framework"
                BlueprintName = "SignalProcessing"
                ReferencedContainer = "container:SwiftLearn.xcodeproj">
@@ -70,7 +84,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_108"
+               BlueprintIdentifier = "OBJ_118"
                BuildableName = "NeuralNetwork.framework"
                BlueprintName = "NeuralNetwork"
                ReferencedContainer = "container:SwiftLearn.xcodeproj">
@@ -88,7 +102,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_126"
+               BlueprintIdentifier = "OBJ_138"
                BuildableName = "NeuralNetworkTests.xctest"
                BlueprintName = "NeuralNetworkTests"
                ReferencedContainer = "container:SwiftLearn.xcodeproj">
@@ -111,9 +125,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_55"
-            BuildableName = "Linear.framework"
-            BlueprintName = "Linear"
+            BlueprintIdentifier = "OBJ_58"
+            BuildableName = "GeneralMath.framework"
+            BlueprintName = "GeneralMath"
             ReferencedContainer = "container:SwiftLearn.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -7,177 +7,196 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50B4B0841E237FC300F04881 /* MNIST_layer0_init.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50B4B0801E237FC300F04881 /* MNIST_layer0_init.csv */; };
-		50B4B0851E237FC300F04881 /* MNIST_layer1_init.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50B4B0811E237FC300F04881 /* MNIST_layer1_init.csv */; };
-		50B4B0861E237FC300F04881 /* MNIST_X.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50B4B0821E237FC300F04881 /* MNIST_X.csv */; };
-		50B4B0871E237FC300F04881 /* MNIST_Y.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50B4B0831E237FC300F04881 /* MNIST_Y.csv */; };
-		OBJ_104 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* FFT.swift */; };
-		OBJ_105 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* IntExtensions.swift */; };
-		OBJ_106 /* Windowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Windowing.swift */; };
-		OBJ_113 /* ActivationFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* ActivationFunction.swift */; };
-		OBJ_114 /* NeuralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* NeuralNetwork.swift */; };
-		OBJ_115 /* NeuralNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* NeuralNetworkLayer.swift */; };
-		OBJ_116 /* NeuralNetworkOptimizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* NeuralNetworkOptimizable.swift */; };
-		OBJ_118 /* Linear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Linear.framework */; };
-		OBJ_119 /* Optimization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Optimization.framework */; };
-		OBJ_120 /* Plotting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Plotting.framework */; };
-		OBJ_121 /* SignalProcessing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* SignalProcessing.framework */; };
-		OBJ_131 /* NeuralNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* NeuralNetworkTests.swift */; };
-		OBJ_132 /* XCTestMatrixHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* XCTestMatrixHelpers.swift */; };
-		OBJ_134 /* Linear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Linear.framework */; };
-		OBJ_135 /* Optimization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Optimization.framework */; };
-		OBJ_136 /* Plotting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Plotting.framework */; };
-		OBJ_137 /* SignalProcessing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* SignalProcessing.framework */; };
-		OBJ_138 /* NeuralNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* NeuralNetwork.framework */; };
-		OBJ_60 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Matrix.swift */; };
-		OBJ_61 /* MatrixAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* MatrixAddition.swift */; };
-		OBJ_62 /* MatrixComponentWiseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* MatrixComponentWiseFunction.swift */; };
-		OBJ_63 /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MatrixConcatenation.swift */; };
-		OBJ_64 /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MatrixCreation.swift */; };
-		OBJ_65 /* MatrixCustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* MatrixCustomStringConvertible.swift */; };
-		OBJ_66 /* MatrixDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* MatrixDivision.swift */; };
-		OBJ_67 /* MatrixEquatableComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MatrixEquatableComparable.swift */; };
-		OBJ_68 /* MatrixInverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* MatrixInverse.swift */; };
-		OBJ_69 /* MatrixIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* MatrixIO.swift */; };
-		OBJ_70 /* MatrixMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* MatrixMisc.swift */; };
-		OBJ_71 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* MatrixMultiplication.swift */; };
-		OBJ_72 /* MatrixRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* MatrixRandom.swift */; };
-		OBJ_73 /* MatrixRowsAndColumns.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* MatrixRowsAndColumns.swift */; };
-		OBJ_74 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* MatrixSubscripting.swift */; };
-		OBJ_75 /* MatrixSubtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* MatrixSubtraction.swift */; };
-		OBJ_76 /* MatrixSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* MatrixSum.swift */; };
-		OBJ_77 /* MatrixTransposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* MatrixTransposition.swift */; };
-		OBJ_78 /* XCTestMatrixHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* XCTestMatrixHelpers.swift */; };
-		OBJ_85 /* ConjugateGradientOptimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* ConjugateGradientOptimizer.swift */; };
-		OBJ_86 /* GradientDescentOptimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* GradientDescentOptimizer.swift */; };
-		OBJ_87 /* Optimizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Optimizable.swift */; };
-		OBJ_89 /* Linear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Linear.framework */; };
-		OBJ_96 /* FileHandleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* FileHandleExtensions.swift */; };
-		OBJ_97 /* Plotting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Plotting.swift */; };
+		50FB4D2A1E238C6400FCB915 /* MNIST_layer0_init.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D261E238C6400FCB915 /* MNIST_layer0_init.csv */; };
+		50FB4D2B1E238C6400FCB915 /* MNIST_layer1_init.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D271E238C6400FCB915 /* MNIST_layer1_init.csv */; };
+		50FB4D2C1E238C6400FCB915 /* MNIST_X.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D281E238C6400FCB915 /* MNIST_X.csv */; };
+		50FB4D2D1E238C6400FCB915 /* MNIST_Y.csv in Resources */ = {isa = PBXBuildFile; fileRef = 50FB4D291E238C6400FCB915 /* MNIST_Y.csv */; };
+		OBJ_106 /* FileHandleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* FileHandleExtensions.swift */; };
+		OBJ_107 /* Plotting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Plotting.swift */; };
+		OBJ_114 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* FFT.swift */; };
+		OBJ_115 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* IntExtensions.swift */; };
+		OBJ_116 /* Windowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Windowing.swift */; };
+		OBJ_123 /* ActivationFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ActivationFunction.swift */; };
+		OBJ_124 /* NeuralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* NeuralNetwork.swift */; };
+		OBJ_125 /* NeuralNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* NeuralNetworkLayer.swift */; };
+		OBJ_126 /* NeuralNetworkOptimizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* NeuralNetworkOptimizable.swift */; };
+		OBJ_128 /* GeneralMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* GeneralMath.framework */; };
+		OBJ_129 /* Linear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Linear.framework */; };
+		OBJ_130 /* Optimization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Optimization.framework */; };
+		OBJ_131 /* Plotting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Plotting.framework */; };
+		OBJ_132 /* SignalProcessing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* SignalProcessing.framework */; };
+		OBJ_143 /* NeuralNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* NeuralNetworkTests.swift */; };
+		OBJ_144 /* XCTestMatrixHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* XCTestMatrixHelpers.swift */; };
+		OBJ_146 /* GeneralMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* GeneralMath.framework */; };
+		OBJ_147 /* Linear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Linear.framework */; };
+		OBJ_148 /* Optimization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Optimization.framework */; };
+		OBJ_149 /* Plotting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Plotting.framework */; };
+		OBJ_150 /* SignalProcessing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* SignalProcessing.framework */; };
+		OBJ_151 /* NeuralNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* NeuralNetwork.framework */; };
+		OBJ_63 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Random.swift */; };
+		OBJ_70 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Matrix.swift */; };
+		OBJ_71 /* MatrixAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MatrixAddition.swift */; };
+		OBJ_72 /* MatrixComponentWiseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MatrixComponentWiseFunction.swift */; };
+		OBJ_73 /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* MatrixConcatenation.swift */; };
+		OBJ_74 /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* MatrixCreation.swift */; };
+		OBJ_75 /* MatrixCustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MatrixCustomStringConvertible.swift */; };
+		OBJ_76 /* MatrixDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* MatrixDivision.swift */; };
+		OBJ_77 /* MatrixEquatableComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* MatrixEquatableComparable.swift */; };
+		OBJ_78 /* MatrixInverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* MatrixInverse.swift */; };
+		OBJ_79 /* MatrixIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* MatrixIO.swift */; };
+		OBJ_80 /* MatrixMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* MatrixMisc.swift */; };
+		OBJ_81 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* MatrixMultiplication.swift */; };
+		OBJ_82 /* MatrixRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* MatrixRandom.swift */; };
+		OBJ_83 /* MatrixRowsAndColumns.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* MatrixRowsAndColumns.swift */; };
+		OBJ_84 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* MatrixSubscripting.swift */; };
+		OBJ_85 /* MatrixSubtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* MatrixSubtraction.swift */; };
+		OBJ_86 /* MatrixSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* MatrixSum.swift */; };
+		OBJ_87 /* MatrixTransposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* MatrixTransposition.swift */; };
+		OBJ_88 /* XCTestMatrixHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* XCTestMatrixHelpers.swift */; };
+		OBJ_95 /* ConjugateGradientOptimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* ConjugateGradientOptimizer.swift */; };
+		OBJ_96 /* GradientDescentOptimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* GradientDescentOptimizer.swift */; };
+		OBJ_97 /* Optimizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Optimizable.swift */; };
+		OBJ_99 /* Linear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Linear.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		50B4B0751E237F9B00F04881 /* PBXContainerItemProxy */ = {
+		50FB4D191E238C3D00FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_55;
+			remoteGlobalIDString = OBJ_65;
 			remoteInfo = Linear;
 		};
-		50B4B0761E237F9B00F04881 /* PBXContainerItemProxy */ = {
+		50FB4D1A1E238C3D00FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_55;
+			remoteGlobalIDString = OBJ_58;
+			remoteInfo = GeneralMath;
+		};
+		50FB4D1B1E238C3D00FCB915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_65;
 			remoteInfo = Linear;
 		};
-		50B4B0771E237F9B00F04881 /* PBXContainerItemProxy */ = {
+		50FB4D1C1E238C3D00FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_80;
+			remoteGlobalIDString = OBJ_90;
 			remoteInfo = Optimization;
 		};
-		50B4B0781E237F9B00F04881 /* PBXContainerItemProxy */ = {
+		50FB4D1D1E238C3D00FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_91;
+			remoteGlobalIDString = OBJ_101;
 			remoteInfo = Plotting;
 		};
-		50B4B0791E237F9B00F04881 /* PBXContainerItemProxy */ = {
+		50FB4D1E1E238C3D00FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_99;
+			remoteGlobalIDString = OBJ_109;
 			remoteInfo = SignalProcessing;
 		};
-		50B4B07A1E237F9B00F04881 /* PBXContainerItemProxy */ = {
+		50FB4D1F1E238C3D00FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_55;
+			remoteGlobalIDString = OBJ_58;
+			remoteInfo = GeneralMath;
+		};
+		50FB4D201E238C3D00FCB915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_65;
 			remoteInfo = Linear;
 		};
-		50B4B07B1E237F9B00F04881 /* PBXContainerItemProxy */ = {
+		50FB4D211E238C3D00FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_80;
+			remoteGlobalIDString = OBJ_90;
 			remoteInfo = Optimization;
 		};
-		50B4B07C1E237F9B00F04881 /* PBXContainerItemProxy */ = {
+		50FB4D221E238C3D00FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_91;
+			remoteGlobalIDString = OBJ_101;
 			remoteInfo = Plotting;
 		};
-		50B4B07D1E237F9B00F04881 /* PBXContainerItemProxy */ = {
+		50FB4D231E238C3D00FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_99;
+			remoteGlobalIDString = OBJ_109;
 			remoteInfo = SignalProcessing;
 		};
-		50B4B07E1E237F9B00F04881 /* PBXContainerItemProxy */ = {
+		50FB4D241E238C3D00FCB915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_108;
+			remoteGlobalIDString = OBJ_118;
 			remoteInfo = NeuralNetwork;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		50B4B0801E237FC300F04881 /* MNIST_layer0_init.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_layer0_init.csv; sourceTree = "<group>"; };
-		50B4B0811E237FC300F04881 /* MNIST_layer1_init.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_layer1_init.csv; sourceTree = "<group>"; };
-		50B4B0821E237FC300F04881 /* MNIST_X.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_X.csv; sourceTree = "<group>"; };
-		50B4B0831E237FC300F04881 /* MNIST_Y.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_Y.csv; sourceTree = "<group>"; };
-		OBJ_10 /* MatrixAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAddition.swift; sourceTree = "<group>"; };
-		OBJ_11 /* MatrixComponentWiseFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixComponentWiseFunction.swift; sourceTree = "<group>"; };
-		OBJ_12 /* MatrixConcatenation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixConcatenation.swift; sourceTree = "<group>"; };
-		OBJ_13 /* MatrixCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCreation.swift; sourceTree = "<group>"; };
-		OBJ_14 /* MatrixCustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCustomStringConvertible.swift; sourceTree = "<group>"; };
-		OBJ_15 /* MatrixDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixDivision.swift; sourceTree = "<group>"; };
-		OBJ_16 /* MatrixEquatableComparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixEquatableComparable.swift; sourceTree = "<group>"; };
-		OBJ_17 /* MatrixInverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixInverse.swift; sourceTree = "<group>"; };
-		OBJ_18 /* MatrixIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixIO.swift; sourceTree = "<group>"; };
-		OBJ_19 /* MatrixMisc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMisc.swift; sourceTree = "<group>"; };
-		OBJ_20 /* MatrixMultiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMultiplication.swift; sourceTree = "<group>"; };
-		OBJ_21 /* MatrixRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixRandom.swift; sourceTree = "<group>"; };
-		OBJ_22 /* MatrixRowsAndColumns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixRowsAndColumns.swift; sourceTree = "<group>"; };
-		OBJ_23 /* MatrixSubscripting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSubscripting.swift; sourceTree = "<group>"; };
-		OBJ_24 /* MatrixSubtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSubtraction.swift; sourceTree = "<group>"; };
-		OBJ_25 /* MatrixSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSum.swift; sourceTree = "<group>"; };
-		OBJ_26 /* MatrixTransposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTransposition.swift; sourceTree = "<group>"; };
-		OBJ_27 /* XCTestMatrixHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestMatrixHelpers.swift; sourceTree = "<group>"; };
-		OBJ_29 /* ConjugateGradientOptimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConjugateGradientOptimizer.swift; sourceTree = "<group>"; };
-		OBJ_30 /* GradientDescentOptimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDescentOptimizer.swift; sourceTree = "<group>"; };
-		OBJ_31 /* Optimizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optimizable.swift; sourceTree = "<group>"; };
-		OBJ_33 /* FileHandleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandleExtensions.swift; sourceTree = "<group>"; };
-		OBJ_34 /* Plotting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plotting.swift; sourceTree = "<group>"; };
-		OBJ_36 /* FFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
-		OBJ_37 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
-		OBJ_38 /* Windowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Windowing.swift; sourceTree = "<group>"; };
-		OBJ_40 /* ActivationFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationFunction.swift; sourceTree = "<group>"; };
-		OBJ_41 /* NeuralNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetwork.swift; sourceTree = "<group>"; };
-		OBJ_42 /* NeuralNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkLayer.swift; sourceTree = "<group>"; };
-		OBJ_43 /* NeuralNetworkOptimizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkOptimizable.swift; sourceTree = "<group>"; };
-		OBJ_46 /* NeuralNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkTests.swift; sourceTree = "<group>"; };
-		OBJ_47 /* XCTestMatrixHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestMatrixHelpers.swift; sourceTree = "<group>"; };
-		OBJ_49 /* Linear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Linear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_50 /* Optimization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Optimization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_51 /* Plotting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Plotting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_52 /* SignalProcessing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SignalProcessing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_53 /* NeuralNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeuralNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_54 /* NeuralNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = NeuralNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FB4D261E238C6400FCB915 /* MNIST_layer0_init.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_layer0_init.csv; sourceTree = "<group>"; };
+		50FB4D271E238C6400FCB915 /* MNIST_layer1_init.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_layer1_init.csv; sourceTree = "<group>"; };
+		50FB4D281E238C6400FCB915 /* MNIST_X.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_X.csv; sourceTree = "<group>"; };
+		50FB4D291E238C6400FCB915 /* MNIST_Y.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MNIST_Y.csv; sourceTree = "<group>"; };
+		OBJ_11 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		OBJ_12 /* MatrixAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAddition.swift; sourceTree = "<group>"; };
+		OBJ_13 /* MatrixComponentWiseFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixComponentWiseFunction.swift; sourceTree = "<group>"; };
+		OBJ_14 /* MatrixConcatenation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixConcatenation.swift; sourceTree = "<group>"; };
+		OBJ_15 /* MatrixCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCreation.swift; sourceTree = "<group>"; };
+		OBJ_16 /* MatrixCustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCustomStringConvertible.swift; sourceTree = "<group>"; };
+		OBJ_17 /* MatrixDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixDivision.swift; sourceTree = "<group>"; };
+		OBJ_18 /* MatrixEquatableComparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixEquatableComparable.swift; sourceTree = "<group>"; };
+		OBJ_19 /* MatrixInverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixInverse.swift; sourceTree = "<group>"; };
+		OBJ_20 /* MatrixIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixIO.swift; sourceTree = "<group>"; };
+		OBJ_21 /* MatrixMisc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMisc.swift; sourceTree = "<group>"; };
+		OBJ_22 /* MatrixMultiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMultiplication.swift; sourceTree = "<group>"; };
+		OBJ_23 /* MatrixRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixRandom.swift; sourceTree = "<group>"; };
+		OBJ_24 /* MatrixRowsAndColumns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixRowsAndColumns.swift; sourceTree = "<group>"; };
+		OBJ_25 /* MatrixSubscripting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSubscripting.swift; sourceTree = "<group>"; };
+		OBJ_26 /* MatrixSubtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSubtraction.swift; sourceTree = "<group>"; };
+		OBJ_27 /* MatrixSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSum.swift; sourceTree = "<group>"; };
+		OBJ_28 /* MatrixTransposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTransposition.swift; sourceTree = "<group>"; };
+		OBJ_29 /* XCTestMatrixHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestMatrixHelpers.swift; sourceTree = "<group>"; };
+		OBJ_31 /* ConjugateGradientOptimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConjugateGradientOptimizer.swift; sourceTree = "<group>"; };
+		OBJ_32 /* GradientDescentOptimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDescentOptimizer.swift; sourceTree = "<group>"; };
+		OBJ_33 /* Optimizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optimizable.swift; sourceTree = "<group>"; };
+		OBJ_35 /* FileHandleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandleExtensions.swift; sourceTree = "<group>"; };
+		OBJ_36 /* Plotting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plotting.swift; sourceTree = "<group>"; };
+		OBJ_38 /* FFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
+		OBJ_39 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Windowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Windowing.swift; sourceTree = "<group>"; };
+		OBJ_42 /* ActivationFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationFunction.swift; sourceTree = "<group>"; };
+		OBJ_43 /* NeuralNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetwork.swift; sourceTree = "<group>"; };
+		OBJ_44 /* NeuralNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkLayer.swift; sourceTree = "<group>"; };
+		OBJ_45 /* NeuralNetworkOptimizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkOptimizable.swift; sourceTree = "<group>"; };
+		OBJ_48 /* NeuralNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkTests.swift; sourceTree = "<group>"; };
+		OBJ_49 /* XCTestMatrixHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestMatrixHelpers.swift; sourceTree = "<group>"; };
+		OBJ_51 /* GeneralMath.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GeneralMath.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_52 /* Linear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Linear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_53 /* Optimization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Optimization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_54 /* Plotting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Plotting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_55 /* SignalProcessing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SignalProcessing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_56 /* NeuralNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeuralNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_57 /* NeuralNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = NeuralNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_107 /* Frameworks */ = {
+		OBJ_108 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -188,37 +207,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_118 /* Linear.framework in Frameworks */,
-				OBJ_119 /* Optimization.framework in Frameworks */,
-				OBJ_120 /* Plotting.framework in Frameworks */,
-				OBJ_121 /* SignalProcessing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_133 /* Frameworks */ = {
+		OBJ_127 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_134 /* Linear.framework in Frameworks */,
-				OBJ_135 /* Optimization.framework in Frameworks */,
-				OBJ_136 /* Plotting.framework in Frameworks */,
-				OBJ_137 /* SignalProcessing.framework in Frameworks */,
-				OBJ_138 /* NeuralNetwork.framework in Frameworks */,
+				OBJ_128 /* GeneralMath.framework in Frameworks */,
+				OBJ_129 /* Linear.framework in Frameworks */,
+				OBJ_130 /* Optimization.framework in Frameworks */,
+				OBJ_131 /* Plotting.framework in Frameworks */,
+				OBJ_132 /* SignalProcessing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_79 /* Frameworks */ = {
+		OBJ_145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_146 /* GeneralMath.framework in Frameworks */,
+				OBJ_147 /* Linear.framework in Frameworks */,
+				OBJ_148 /* Optimization.framework in Frameworks */,
+				OBJ_149 /* Plotting.framework in Frameworks */,
+				OBJ_150 /* SignalProcessing.framework in Frameworks */,
+				OBJ_151 /* NeuralNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_64 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_88 /* Frameworks */ = {
+		OBJ_89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_89 /* Linear.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,225 +253,162 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				OBJ_99 /* Linear.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_28 /* Optimization */ = {
+		OBJ_10 /* Linear */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_29 /* ConjugateGradientOptimizer.swift */,
-				OBJ_30 /* GradientDescentOptimizer.swift */,
-				OBJ_31 /* Optimizable.swift */,
+				OBJ_11 /* Matrix.swift */,
+				OBJ_12 /* MatrixAddition.swift */,
+				OBJ_13 /* MatrixComponentWiseFunction.swift */,
+				OBJ_14 /* MatrixConcatenation.swift */,
+				OBJ_15 /* MatrixCreation.swift */,
+				OBJ_16 /* MatrixCustomStringConvertible.swift */,
+				OBJ_17 /* MatrixDivision.swift */,
+				OBJ_18 /* MatrixEquatableComparable.swift */,
+				OBJ_19 /* MatrixInverse.swift */,
+				OBJ_20 /* MatrixIO.swift */,
+				OBJ_21 /* MatrixMisc.swift */,
+				OBJ_22 /* MatrixMultiplication.swift */,
+				OBJ_23 /* MatrixRandom.swift */,
+				OBJ_24 /* MatrixRowsAndColumns.swift */,
+				OBJ_25 /* MatrixSubscripting.swift */,
+				OBJ_26 /* MatrixSubtraction.swift */,
+				OBJ_27 /* MatrixSum.swift */,
+				OBJ_28 /* MatrixTransposition.swift */,
+				OBJ_29 /* XCTestMatrixHelpers.swift */,
+			);
+			name = Linear;
+			path = "Packages/SwiftNum-1.9.4/Sources/Linear";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_30 /* Optimization */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_31 /* ConjugateGradientOptimizer.swift */,
+				OBJ_32 /* GradientDescentOptimizer.swift */,
+				OBJ_33 /* Optimizable.swift */,
 			);
 			name = Optimization;
-			path = "Packages/SwiftNum-1.9.3/Sources/Optimization";
+			path = "Packages/SwiftNum-1.9.4/Sources/Optimization";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_32 /* Plotting */ = {
+		OBJ_34 /* Plotting */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_33 /* FileHandleExtensions.swift */,
-				OBJ_34 /* Plotting.swift */,
+				OBJ_35 /* FileHandleExtensions.swift */,
+				OBJ_36 /* Plotting.swift */,
 			);
 			name = Plotting;
-			path = "Packages/SwiftNum-1.9.3/Sources/Plotting";
+			path = "Packages/SwiftNum-1.9.4/Sources/Plotting";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_35 /* SignalProcessing */ = {
+		OBJ_37 /* SignalProcessing */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_36 /* FFT.swift */,
-				OBJ_37 /* IntExtensions.swift */,
-				OBJ_38 /* Windowing.swift */,
+				OBJ_38 /* FFT.swift */,
+				OBJ_39 /* IntExtensions.swift */,
+				OBJ_40 /* Windowing.swift */,
 			);
 			name = SignalProcessing;
-			path = "Packages/SwiftNum-1.9.3/Sources/SignalProcessing";
+			path = "Packages/SwiftNum-1.9.4/Sources/SignalProcessing";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_39 /* NeuralNetwork */ = {
+		OBJ_41 /* NeuralNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_40 /* ActivationFunction.swift */,
-				OBJ_41 /* NeuralNetwork.swift */,
-				OBJ_42 /* NeuralNetworkLayer.swift */,
-				OBJ_43 /* NeuralNetworkOptimizable.swift */,
+				OBJ_42 /* ActivationFunction.swift */,
+				OBJ_43 /* NeuralNetwork.swift */,
+				OBJ_44 /* NeuralNetworkLayer.swift */,
+				OBJ_45 /* NeuralNetworkOptimizable.swift */,
 			);
 			name = NeuralNetwork;
 			path = Sources/NeuralNetwork;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_44 /* Tests */ = {
+		OBJ_46 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_45 /* NeuralNetworkTests */,
+				OBJ_47 /* NeuralNetworkTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		OBJ_45 /* NeuralNetworkTests */ = {
+		OBJ_47 /* NeuralNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				50B4B0801E237FC300F04881 /* MNIST_layer0_init.csv */,
-				50B4B0811E237FC300F04881 /* MNIST_layer1_init.csv */,
-				50B4B0821E237FC300F04881 /* MNIST_X.csv */,
-				50B4B0831E237FC300F04881 /* MNIST_Y.csv */,
-				OBJ_46 /* NeuralNetworkTests.swift */,
-				OBJ_47 /* XCTestMatrixHelpers.swift */,
+				50FB4D261E238C6400FCB915 /* MNIST_layer0_init.csv */,
+				50FB4D271E238C6400FCB915 /* MNIST_layer1_init.csv */,
+				50FB4D281E238C6400FCB915 /* MNIST_X.csv */,
+				50FB4D291E238C6400FCB915 /* MNIST_Y.csv */,
+				OBJ_48 /* NeuralNetworkTests.swift */,
+				OBJ_49 /* XCTestMatrixHelpers.swift */,
 			);
 			name = NeuralNetworkTests;
 			path = Tests/NeuralNetworkTests;
 			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_48 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_49 /* Linear.framework */,
-				OBJ_50 /* Optimization.framework */,
-				OBJ_51 /* Plotting.framework */,
-				OBJ_52 /* SignalProcessing.framework */,
-				OBJ_53 /* NeuralNetwork.framework */,
-				OBJ_54 /* NeuralNetworkTests.xctest */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_44 /* Tests */,
-				OBJ_48 /* Products */,
+				OBJ_46 /* Tests */,
+				OBJ_50 /* Products */,
 			);
 			name = "";
 			sourceTree = "<group>";
 		};
+		OBJ_50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_51 /* GeneralMath.framework */,
+				OBJ_52 /* Linear.framework */,
+				OBJ_53 /* Optimization.framework */,
+				OBJ_54 /* Plotting.framework */,
+				OBJ_55 /* SignalProcessing.framework */,
+				OBJ_56 /* NeuralNetwork.framework */,
+				OBJ_57 /* NeuralNetworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* Linear */,
-				OBJ_28 /* Optimization */,
-				OBJ_32 /* Plotting */,
-				OBJ_35 /* SignalProcessing */,
-				OBJ_39 /* NeuralNetwork */,
+				OBJ_8 /* GeneralMath */,
+				OBJ_10 /* Linear */,
+				OBJ_30 /* Optimization */,
+				OBJ_34 /* Plotting */,
+				OBJ_37 /* SignalProcessing */,
+				OBJ_41 /* NeuralNetwork */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		OBJ_8 /* Linear */ = {
+		OBJ_8 /* GeneralMath */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* Matrix.swift */,
-				OBJ_10 /* MatrixAddition.swift */,
-				OBJ_11 /* MatrixComponentWiseFunction.swift */,
-				OBJ_12 /* MatrixConcatenation.swift */,
-				OBJ_13 /* MatrixCreation.swift */,
-				OBJ_14 /* MatrixCustomStringConvertible.swift */,
-				OBJ_15 /* MatrixDivision.swift */,
-				OBJ_16 /* MatrixEquatableComparable.swift */,
-				OBJ_17 /* MatrixInverse.swift */,
-				OBJ_18 /* MatrixIO.swift */,
-				OBJ_19 /* MatrixMisc.swift */,
-				OBJ_20 /* MatrixMultiplication.swift */,
-				OBJ_21 /* MatrixRandom.swift */,
-				OBJ_22 /* MatrixRowsAndColumns.swift */,
-				OBJ_23 /* MatrixSubscripting.swift */,
-				OBJ_24 /* MatrixSubtraction.swift */,
-				OBJ_25 /* MatrixSum.swift */,
-				OBJ_26 /* MatrixTransposition.swift */,
-				OBJ_27 /* XCTestMatrixHelpers.swift */,
+				OBJ_9 /* Random.swift */,
 			);
-			name = Linear;
-			path = "Packages/SwiftNum-1.9.3/Sources/Linear";
+			name = GeneralMath;
+			path = "Packages/SwiftNum-1.9.4/Sources/GeneralMath";
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_108 /* NeuralNetwork */ = {
+		OBJ_101 /* Plotting */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_109 /* Build configuration list for PBXNativeTarget "NeuralNetwork" */;
+			buildConfigurationList = OBJ_102 /* Build configuration list for PBXNativeTarget "Plotting" */;
 			buildPhases = (
-				OBJ_112 /* Sources */,
-				OBJ_117 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_122 /* PBXTargetDependency */,
-				OBJ_123 /* PBXTargetDependency */,
-				OBJ_124 /* PBXTargetDependency */,
-				OBJ_125 /* PBXTargetDependency */,
-			);
-			name = NeuralNetwork;
-			productName = NeuralNetwork;
-			productReference = OBJ_53 /* NeuralNetwork.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		OBJ_126 /* NeuralNetworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_127 /* Build configuration list for PBXNativeTarget "NeuralNetworkTests" */;
-			buildPhases = (
-				OBJ_130 /* Sources */,
-				OBJ_133 /* Frameworks */,
-				50B4B07F1E237FBE00F04881 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_139 /* PBXTargetDependency */,
-				OBJ_140 /* PBXTargetDependency */,
-				OBJ_141 /* PBXTargetDependency */,
-				OBJ_142 /* PBXTargetDependency */,
-				OBJ_143 /* PBXTargetDependency */,
-			);
-			name = NeuralNetworkTests;
-			productName = NeuralNetworkTests;
-			productReference = OBJ_54 /* NeuralNetworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		OBJ_55 /* Linear */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_56 /* Build configuration list for PBXNativeTarget "Linear" */;
-			buildPhases = (
-				OBJ_59 /* Sources */,
-				OBJ_79 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Linear;
-			productName = Linear;
-			productReference = OBJ_49 /* Linear.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		OBJ_80 /* Optimization */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_81 /* Build configuration list for PBXNativeTarget "Optimization" */;
-			buildPhases = (
-				OBJ_84 /* Sources */,
-				OBJ_88 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_90 /* PBXTargetDependency */,
-			);
-			name = Optimization;
-			productName = Optimization;
-			productReference = OBJ_50 /* Optimization.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		OBJ_91 /* Plotting */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_92 /* Build configuration list for PBXNativeTarget "Plotting" */;
-			buildPhases = (
-				OBJ_95 /* Sources */,
-				OBJ_98 /* Frameworks */,
+				OBJ_105 /* Sources */,
+				OBJ_108 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -452,15 +416,15 @@
 			);
 			name = Plotting;
 			productName = Plotting;
-			productReference = OBJ_51 /* Plotting.framework */;
+			productReference = OBJ_54 /* Plotting.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_99 /* SignalProcessing */ = {
+		OBJ_109 /* SignalProcessing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_100 /* Build configuration list for PBXNativeTarget "SignalProcessing" */;
+			buildConfigurationList = OBJ_110 /* Build configuration list for PBXNativeTarget "SignalProcessing" */;
 			buildPhases = (
-				OBJ_103 /* Sources */,
-				OBJ_107 /* Frameworks */,
+				OBJ_113 /* Sources */,
+				OBJ_117 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -468,7 +432,100 @@
 			);
 			name = SignalProcessing;
 			productName = SignalProcessing;
-			productReference = OBJ_52 /* SignalProcessing.framework */;
+			productReference = OBJ_55 /* SignalProcessing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_118 /* NeuralNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_119 /* Build configuration list for PBXNativeTarget "NeuralNetwork" */;
+			buildPhases = (
+				OBJ_122 /* Sources */,
+				OBJ_127 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_133 /* PBXTargetDependency */,
+				OBJ_134 /* PBXTargetDependency */,
+				OBJ_135 /* PBXTargetDependency */,
+				OBJ_136 /* PBXTargetDependency */,
+				OBJ_137 /* PBXTargetDependency */,
+			);
+			name = NeuralNetwork;
+			productName = NeuralNetwork;
+			productReference = OBJ_56 /* NeuralNetwork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_138 /* NeuralNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_139 /* Build configuration list for PBXNativeTarget "NeuralNetworkTests" */;
+			buildPhases = (
+				OBJ_142 /* Sources */,
+				OBJ_145 /* Frameworks */,
+				50FB4D251E238C5700FCB915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_152 /* PBXTargetDependency */,
+				OBJ_153 /* PBXTargetDependency */,
+				OBJ_154 /* PBXTargetDependency */,
+				OBJ_155 /* PBXTargetDependency */,
+				OBJ_156 /* PBXTargetDependency */,
+				OBJ_157 /* PBXTargetDependency */,
+			);
+			name = NeuralNetworkTests;
+			productName = NeuralNetworkTests;
+			productReference = OBJ_57 /* NeuralNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		OBJ_58 /* GeneralMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_59 /* Build configuration list for PBXNativeTarget "GeneralMath" */;
+			buildPhases = (
+				OBJ_62 /* Sources */,
+				OBJ_64 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeneralMath;
+			productName = GeneralMath;
+			productReference = OBJ_51 /* GeneralMath.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_65 /* Linear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_66 /* Build configuration list for PBXNativeTarget "Linear" */;
+			buildPhases = (
+				OBJ_69 /* Sources */,
+				OBJ_89 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Linear;
+			productName = Linear;
+			productReference = OBJ_52 /* Linear.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_90 /* Optimization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_91 /* Build configuration list for PBXNativeTarget "Optimization" */;
+			buildPhases = (
+				OBJ_94 /* Sources */,
+				OBJ_98 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_100 /* PBXTargetDependency */,
+			);
+			name = Optimization;
+			productName = Optimization;
+			productReference = OBJ_53 /* Optimization.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -487,167 +544,226 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_48 /* Products */;
+			productRefGroup = OBJ_50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_55 /* Linear */,
-				OBJ_80 /* Optimization */,
-				OBJ_91 /* Plotting */,
-				OBJ_99 /* SignalProcessing */,
-				OBJ_108 /* NeuralNetwork */,
-				OBJ_126 /* NeuralNetworkTests */,
+				OBJ_58 /* GeneralMath */,
+				OBJ_65 /* Linear */,
+				OBJ_90 /* Optimization */,
+				OBJ_101 /* Plotting */,
+				OBJ_109 /* SignalProcessing */,
+				OBJ_118 /* NeuralNetwork */,
+				OBJ_138 /* NeuralNetworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		50B4B07F1E237FBE00F04881 /* Resources */ = {
+		50FB4D251E238C5700FCB915 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50B4B0871E237FC300F04881 /* MNIST_Y.csv in Resources */,
-				50B4B0851E237FC300F04881 /* MNIST_layer1_init.csv in Resources */,
-				50B4B0861E237FC300F04881 /* MNIST_X.csv in Resources */,
-				50B4B0841E237FC300F04881 /* MNIST_layer0_init.csv in Resources */,
+				50FB4D2D1E238C6400FCB915 /* MNIST_Y.csv in Resources */,
+				50FB4D2B1E238C6400FCB915 /* MNIST_layer1_init.csv in Resources */,
+				50FB4D2C1E238C6400FCB915 /* MNIST_X.csv in Resources */,
+				50FB4D2A1E238C6400FCB915 /* MNIST_layer0_init.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_103 /* Sources */ = {
+		OBJ_105 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_104 /* FFT.swift in Sources */,
-				OBJ_105 /* IntExtensions.swift in Sources */,
-				OBJ_106 /* Windowing.swift in Sources */,
+				OBJ_106 /* FileHandleExtensions.swift in Sources */,
+				OBJ_107 /* Plotting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_112 /* Sources */ = {
+		OBJ_113 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_113 /* ActivationFunction.swift in Sources */,
-				OBJ_114 /* NeuralNetwork.swift in Sources */,
-				OBJ_115 /* NeuralNetworkLayer.swift in Sources */,
-				OBJ_116 /* NeuralNetworkOptimizable.swift in Sources */,
+				OBJ_114 /* FFT.swift in Sources */,
+				OBJ_115 /* IntExtensions.swift in Sources */,
+				OBJ_116 /* Windowing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_130 /* Sources */ = {
+		OBJ_122 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_131 /* NeuralNetworkTests.swift in Sources */,
-				OBJ_132 /* XCTestMatrixHelpers.swift in Sources */,
+				OBJ_123 /* ActivationFunction.swift in Sources */,
+				OBJ_124 /* NeuralNetwork.swift in Sources */,
+				OBJ_125 /* NeuralNetworkLayer.swift in Sources */,
+				OBJ_126 /* NeuralNetworkOptimizable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_59 /* Sources */ = {
+		OBJ_142 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_60 /* Matrix.swift in Sources */,
-				OBJ_61 /* MatrixAddition.swift in Sources */,
-				OBJ_62 /* MatrixComponentWiseFunction.swift in Sources */,
-				OBJ_63 /* MatrixConcatenation.swift in Sources */,
-				OBJ_64 /* MatrixCreation.swift in Sources */,
-				OBJ_65 /* MatrixCustomStringConvertible.swift in Sources */,
-				OBJ_66 /* MatrixDivision.swift in Sources */,
-				OBJ_67 /* MatrixEquatableComparable.swift in Sources */,
-				OBJ_68 /* MatrixInverse.swift in Sources */,
-				OBJ_69 /* MatrixIO.swift in Sources */,
-				OBJ_70 /* MatrixMisc.swift in Sources */,
-				OBJ_71 /* MatrixMultiplication.swift in Sources */,
-				OBJ_72 /* MatrixRandom.swift in Sources */,
-				OBJ_73 /* MatrixRowsAndColumns.swift in Sources */,
-				OBJ_74 /* MatrixSubscripting.swift in Sources */,
-				OBJ_75 /* MatrixSubtraction.swift in Sources */,
-				OBJ_76 /* MatrixSum.swift in Sources */,
-				OBJ_77 /* MatrixTransposition.swift in Sources */,
-				OBJ_78 /* XCTestMatrixHelpers.swift in Sources */,
+				OBJ_143 /* NeuralNetworkTests.swift in Sources */,
+				OBJ_144 /* XCTestMatrixHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_84 /* Sources */ = {
+		OBJ_62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_85 /* ConjugateGradientOptimizer.swift in Sources */,
-				OBJ_86 /* GradientDescentOptimizer.swift in Sources */,
-				OBJ_87 /* Optimizable.swift in Sources */,
+				OBJ_63 /* Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_95 /* Sources */ = {
+		OBJ_69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_96 /* FileHandleExtensions.swift in Sources */,
-				OBJ_97 /* Plotting.swift in Sources */,
+				OBJ_70 /* Matrix.swift in Sources */,
+				OBJ_71 /* MatrixAddition.swift in Sources */,
+				OBJ_72 /* MatrixComponentWiseFunction.swift in Sources */,
+				OBJ_73 /* MatrixConcatenation.swift in Sources */,
+				OBJ_74 /* MatrixCreation.swift in Sources */,
+				OBJ_75 /* MatrixCustomStringConvertible.swift in Sources */,
+				OBJ_76 /* MatrixDivision.swift in Sources */,
+				OBJ_77 /* MatrixEquatableComparable.swift in Sources */,
+				OBJ_78 /* MatrixInverse.swift in Sources */,
+				OBJ_79 /* MatrixIO.swift in Sources */,
+				OBJ_80 /* MatrixMisc.swift in Sources */,
+				OBJ_81 /* MatrixMultiplication.swift in Sources */,
+				OBJ_82 /* MatrixRandom.swift in Sources */,
+				OBJ_83 /* MatrixRowsAndColumns.swift in Sources */,
+				OBJ_84 /* MatrixSubscripting.swift in Sources */,
+				OBJ_85 /* MatrixSubtraction.swift in Sources */,
+				OBJ_86 /* MatrixSum.swift in Sources */,
+				OBJ_87 /* MatrixTransposition.swift in Sources */,
+				OBJ_88 /* XCTestMatrixHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_95 /* ConjugateGradientOptimizer.swift in Sources */,
+				OBJ_96 /* GradientDescentOptimizer.swift in Sources */,
+				OBJ_97 /* Optimizable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_122 /* PBXTargetDependency */ = {
+		OBJ_100 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_55 /* Linear */;
-			targetProxy = 50B4B0761E237F9B00F04881 /* PBXContainerItemProxy */;
+			target = OBJ_65 /* Linear */;
+			targetProxy = 50FB4D191E238C3D00FCB915 /* PBXContainerItemProxy */;
 		};
-		OBJ_123 /* PBXTargetDependency */ = {
+		OBJ_133 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_80 /* Optimization */;
-			targetProxy = 50B4B0771E237F9B00F04881 /* PBXContainerItemProxy */;
+			target = OBJ_58 /* GeneralMath */;
+			targetProxy = 50FB4D1A1E238C3D00FCB915 /* PBXContainerItemProxy */;
 		};
-		OBJ_124 /* PBXTargetDependency */ = {
+		OBJ_134 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_91 /* Plotting */;
-			targetProxy = 50B4B0781E237F9B00F04881 /* PBXContainerItemProxy */;
+			target = OBJ_65 /* Linear */;
+			targetProxy = 50FB4D1B1E238C3D00FCB915 /* PBXContainerItemProxy */;
 		};
-		OBJ_125 /* PBXTargetDependency */ = {
+		OBJ_135 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_99 /* SignalProcessing */;
-			targetProxy = 50B4B0791E237F9B00F04881 /* PBXContainerItemProxy */;
+			target = OBJ_90 /* Optimization */;
+			targetProxy = 50FB4D1C1E238C3D00FCB915 /* PBXContainerItemProxy */;
 		};
-		OBJ_139 /* PBXTargetDependency */ = {
+		OBJ_136 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_55 /* Linear */;
-			targetProxy = 50B4B07A1E237F9B00F04881 /* PBXContainerItemProxy */;
+			target = OBJ_101 /* Plotting */;
+			targetProxy = 50FB4D1D1E238C3D00FCB915 /* PBXContainerItemProxy */;
 		};
-		OBJ_140 /* PBXTargetDependency */ = {
+		OBJ_137 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_80 /* Optimization */;
-			targetProxy = 50B4B07B1E237F9B00F04881 /* PBXContainerItemProxy */;
+			target = OBJ_109 /* SignalProcessing */;
+			targetProxy = 50FB4D1E1E238C3D00FCB915 /* PBXContainerItemProxy */;
 		};
-		OBJ_141 /* PBXTargetDependency */ = {
+		OBJ_152 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_91 /* Plotting */;
-			targetProxy = 50B4B07C1E237F9B00F04881 /* PBXContainerItemProxy */;
+			target = OBJ_58 /* GeneralMath */;
+			targetProxy = 50FB4D1F1E238C3D00FCB915 /* PBXContainerItemProxy */;
 		};
-		OBJ_142 /* PBXTargetDependency */ = {
+		OBJ_153 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_99 /* SignalProcessing */;
-			targetProxy = 50B4B07D1E237F9B00F04881 /* PBXContainerItemProxy */;
+			target = OBJ_65 /* Linear */;
+			targetProxy = 50FB4D201E238C3D00FCB915 /* PBXContainerItemProxy */;
 		};
-		OBJ_143 /* PBXTargetDependency */ = {
+		OBJ_154 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_108 /* NeuralNetwork */;
-			targetProxy = 50B4B07E1E237F9B00F04881 /* PBXContainerItemProxy */;
+			target = OBJ_90 /* Optimization */;
+			targetProxy = 50FB4D211E238C3D00FCB915 /* PBXContainerItemProxy */;
 		};
-		OBJ_90 /* PBXTargetDependency */ = {
+		OBJ_155 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_55 /* Linear */;
-			targetProxy = 50B4B0751E237F9B00F04881 /* PBXContainerItemProxy */;
+			target = OBJ_101 /* Plotting */;
+			targetProxy = 50FB4D221E238C3D00FCB915 /* PBXContainerItemProxy */;
+		};
+		OBJ_156 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_109 /* SignalProcessing */;
+			targetProxy = 50FB4D231E238C3D00FCB915 /* PBXContainerItemProxy */;
+		};
+		OBJ_157 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_118 /* NeuralNetwork */;
+			targetProxy = 50FB4D241E238C3D00FCB915 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_101 /* Debug */ = {
+		OBJ_103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/Plotting_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Plotting;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = Plotting;
+			};
+			name = Debug;
+		};
+		OBJ_104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/Plotting_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Plotting;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = Plotting;
+			};
+			name = Release;
+		};
+		OBJ_111 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -667,7 +783,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_102 /* Release */ = {
+		OBJ_112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -687,7 +803,7 @@
 			};
 			name = Release;
 		};
-		OBJ_110 /* Debug */ = {
+		OBJ_120 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -707,7 +823,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_111 /* Release */ = {
+		OBJ_121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -727,7 +843,7 @@
 			};
 			name = Release;
 		};
-		OBJ_128 /* Debug */ = {
+		OBJ_140 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -744,7 +860,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_129 /* Release */ = {
+		OBJ_141 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -804,7 +920,47 @@
 			};
 			name = Release;
 		};
-		OBJ_57 /* Debug */ = {
+		OBJ_60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/GeneralMath_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = GeneralMath;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = GeneralMath;
+			};
+			name = Debug;
+		};
+		OBJ_61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/GeneralMath_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = GeneralMath;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = GeneralMath;
+			};
+			name = Release;
+		};
+		OBJ_67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -824,7 +980,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_58 /* Release */ = {
+		OBJ_68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -844,7 +1000,7 @@
 			};
 			name = Release;
 		};
-		OBJ_82 /* Debug */ = {
+		OBJ_92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -864,7 +1020,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_83 /* Release */ = {
+		OBJ_93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -881,75 +1037,44 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				TARGET_NAME = Optimization;
-			};
-			name = Release;
-		};
-		OBJ_93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftLearn.xcodeproj/Plotting_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Plotting;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				TARGET_NAME = Plotting;
-			};
-			name = Debug;
-		};
-		OBJ_94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftLearn.xcodeproj/Plotting_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Plotting;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				TARGET_NAME = Plotting;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_100 /* Build configuration list for PBXNativeTarget "SignalProcessing" */ = {
+		OBJ_102 /* Build configuration list for PBXNativeTarget "Plotting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_101 /* Debug */,
-				OBJ_102 /* Release */,
+				OBJ_103 /* Debug */,
+				OBJ_104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_109 /* Build configuration list for PBXNativeTarget "NeuralNetwork" */ = {
+		OBJ_110 /* Build configuration list for PBXNativeTarget "SignalProcessing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_110 /* Debug */,
-				OBJ_111 /* Release */,
+				OBJ_111 /* Debug */,
+				OBJ_112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_127 /* Build configuration list for PBXNativeTarget "NeuralNetworkTests" */ = {
+		OBJ_119 /* Build configuration list for PBXNativeTarget "NeuralNetwork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_128 /* Debug */,
-				OBJ_129 /* Release */,
+				OBJ_120 /* Debug */,
+				OBJ_121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_139 /* Build configuration list for PBXNativeTarget "NeuralNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_140 /* Debug */,
+				OBJ_141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -963,29 +1088,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_56 /* Build configuration list for PBXNativeTarget "Linear" */ = {
+		OBJ_59 /* Build configuration list for PBXNativeTarget "GeneralMath" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_57 /* Debug */,
-				OBJ_58 /* Release */,
+				OBJ_60 /* Debug */,
+				OBJ_61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_81 /* Build configuration list for PBXNativeTarget "Optimization" */ = {
+		OBJ_66 /* Build configuration list for PBXNativeTarget "Linear" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_82 /* Debug */,
-				OBJ_83 /* Release */,
+				OBJ_67 /* Debug */,
+				OBJ_68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_92 /* Build configuration list for PBXNativeTarget "Plotting" */ = {
+		OBJ_91 /* Build configuration list for PBXNativeTarget "Optimization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_93 /* Debug */,
-				OBJ_94 /* Release */,
+				OBJ_92 /* Debug */,
+				OBJ_93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
