@@ -23,8 +23,9 @@ class NeuralNetworkTests: XCTestCase {
             ])
         
         let networkOptimizable = NeuralNetworkOptimizable(network: xorNN, X: X, Y: Y)
-        let cg = ConjugateGradientOptimizer(maxIterations: 2000)
-        let (history, optimum) = cg.optimize(networkOptimizable)
+        let gd = GradientDescentOptimizer(learningRate: 3.0, precision: -1, maxIterations: 10000)
+        let (history, optimum) = gd.optimize(networkOptimizable)
+        plot(history)
         
         xorNN.setAllWeights(optimum)
         
@@ -56,11 +57,12 @@ class NeuralNetworkTests: XCTestCase {
         let X_all = X_all_temp[0..<X_all_temp.height, perm]
         let Y_all = Y_all_temp[0..<Y_all_temp.height, perm]
 
-        let M_test = Int(Double(X_all.width) * 0.7)
-        let X = X_all[0..<X_all.height, 0..<M_test]
-        let Y = Y_all[0..<Y_all.height, 0..<M_test]
-        let X_test = X_all[0..<X_all.height, M_test..<X_all.width]
-        let Y_test = Y_all[0..<Y_all.height, M_test..<Y_all.width]
+        let M_train = Int(Double(X_all.width) * 0.7)
+        let X = X_all[0..<X_all.height, 0..<M_train]
+        let Y = Y_all[0..<Y_all.height, 0..<M_train]
+        
+        let X_test = X_all[0..<X_all.height, M_train..<X_all.width]
+        let Y_test = Y_all[0..<Y_all.height, M_train..<Y_all.width]
         
         let networkOptimizable = NeuralNetworkOptimizable(network: NN, X: X, Y: Y, lambda: 1)
         let cg = ConjugateGradientOptimizer(maxIterations: 1000)
@@ -92,7 +94,7 @@ class NeuralNetworkTests: XCTestCase {
             correct += maxIndex == correctMaxIndex ? 1 : 0
         }
         
-        print("70/30 Testing set accuracy: \(Double(correct) / Double(Y_test.width))")
+        print("70/30 Testing set accuracy: \(100 * Double(correct) / Double(Y_test.width))%")
     }
 
 
