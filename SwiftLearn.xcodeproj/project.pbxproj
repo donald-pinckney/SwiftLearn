@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		OBJ_104 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* FFT.swift */; };
+		OBJ_105 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* IntExtensions.swift */; };
+		OBJ_106 /* Windowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Windowing.swift */; };
+		OBJ_113 /* ActivationFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* ActivationFunction.swift */; };
+		OBJ_114 /* NeuralNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* NeuralNetwork.swift */; };
+		OBJ_115 /* NeuralNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* NeuralNetworkLayer.swift */; };
+		OBJ_116 /* NeuralNetworkOptimizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* NeuralNetworkOptimizable.swift */; };
+		OBJ_118 /* Linear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Linear.framework */; };
+		OBJ_119 /* Optimization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Optimization.framework */; };
+		OBJ_120 /* Plotting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Plotting.framework */; };
+		OBJ_121 /* SignalProcessing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* SignalProcessing.framework */; };
+		OBJ_131 /* NeuralNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* NeuralNetworkTests.swift */; };
+		OBJ_132 /* XCTestMatrixHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* XCTestMatrixHelpers.swift */; };
+		OBJ_134 /* Linear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Linear.framework */; };
+		OBJ_135 /* Optimization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Optimization.framework */; };
+		OBJ_136 /* Plotting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Plotting.framework */; };
+		OBJ_137 /* SignalProcessing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* SignalProcessing.framework */; };
+		OBJ_138 /* NeuralNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* NeuralNetwork.framework */; };
+		OBJ_60 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Matrix.swift */; };
+		OBJ_61 /* MatrixAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* MatrixAddition.swift */; };
+		OBJ_62 /* MatrixComponentWiseFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* MatrixComponentWiseFunction.swift */; };
+		OBJ_63 /* MatrixConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* MatrixConcatenation.swift */; };
+		OBJ_64 /* MatrixCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* MatrixCreation.swift */; };
+		OBJ_65 /* MatrixCustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* MatrixCustomStringConvertible.swift */; };
+		OBJ_66 /* MatrixDivision.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* MatrixDivision.swift */; };
+		OBJ_67 /* MatrixEquatableComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MatrixEquatableComparable.swift */; };
+		OBJ_68 /* MatrixInverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* MatrixInverse.swift */; };
+		OBJ_69 /* MatrixIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* MatrixIO.swift */; };
+		OBJ_70 /* MatrixMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* MatrixMisc.swift */; };
+		OBJ_71 /* MatrixMultiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* MatrixMultiplication.swift */; };
+		OBJ_72 /* MatrixRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* MatrixRandom.swift */; };
+		OBJ_73 /* MatrixRowsAndColumns.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* MatrixRowsAndColumns.swift */; };
+		OBJ_74 /* MatrixSubscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* MatrixSubscripting.swift */; };
+		OBJ_75 /* MatrixSubtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* MatrixSubtraction.swift */; };
+		OBJ_76 /* MatrixSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* MatrixSum.swift */; };
+		OBJ_77 /* MatrixTransposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* MatrixTransposition.swift */; };
+		OBJ_78 /* XCTestMatrixHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* XCTestMatrixHelpers.swift */; };
+		OBJ_85 /* ConjugateGradientOptimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* ConjugateGradientOptimizer.swift */; };
+		OBJ_86 /* GradientDescentOptimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* GradientDescentOptimizer.swift */; };
+		OBJ_87 /* Optimizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Optimizable.swift */; };
+		OBJ_89 /* Linear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Linear.framework */; };
+		OBJ_96 /* FileHandleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* FileHandleExtensions.swift */; };
+		OBJ_97 /* Plotting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Plotting.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5058EE911E23765E0092406D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_55;
+			remoteInfo = Linear;
+		};
+		5058EE921E23765E0092406D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_55;
+			remoteInfo = Linear;
+		};
+		5058EE931E23765E0092406D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_80;
+			remoteInfo = Optimization;
+		};
+		5058EE941E23765E0092406D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_91;
+			remoteInfo = Plotting;
+		};
+		5058EE951E23765E0092406D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_99;
+			remoteInfo = SignalProcessing;
+		};
+		5058EE961E23765E0092406D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_55;
+			remoteInfo = Linear;
+		};
+		5058EE971E23765E0092406D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_80;
+			remoteInfo = Optimization;
+		};
+		5058EE981E23765E0092406D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_91;
+			remoteInfo = Plotting;
+		};
+		5058EE991E23765E0092406D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_99;
+			remoteInfo = SignalProcessing;
+		};
+		5058EE9A1E23765E0092406D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_108;
+			remoteInfo = NeuralNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_10 /* MatrixAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAddition.swift; sourceTree = "<group>"; };
+		OBJ_11 /* MatrixComponentWiseFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixComponentWiseFunction.swift; sourceTree = "<group>"; };
+		OBJ_12 /* MatrixConcatenation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixConcatenation.swift; sourceTree = "<group>"; };
+		OBJ_13 /* MatrixCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCreation.swift; sourceTree = "<group>"; };
+		OBJ_14 /* MatrixCustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCustomStringConvertible.swift; sourceTree = "<group>"; };
+		OBJ_15 /* MatrixDivision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixDivision.swift; sourceTree = "<group>"; };
+		OBJ_16 /* MatrixEquatableComparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixEquatableComparable.swift; sourceTree = "<group>"; };
+		OBJ_17 /* MatrixInverse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixInverse.swift; sourceTree = "<group>"; };
+		OBJ_18 /* MatrixIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixIO.swift; sourceTree = "<group>"; };
+		OBJ_19 /* MatrixMisc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMisc.swift; sourceTree = "<group>"; };
+		OBJ_20 /* MatrixMultiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixMultiplication.swift; sourceTree = "<group>"; };
+		OBJ_21 /* MatrixRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixRandom.swift; sourceTree = "<group>"; };
+		OBJ_22 /* MatrixRowsAndColumns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixRowsAndColumns.swift; sourceTree = "<group>"; };
+		OBJ_23 /* MatrixSubscripting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSubscripting.swift; sourceTree = "<group>"; };
+		OBJ_24 /* MatrixSubtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSubtraction.swift; sourceTree = "<group>"; };
+		OBJ_25 /* MatrixSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSum.swift; sourceTree = "<group>"; };
+		OBJ_26 /* MatrixTransposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTransposition.swift; sourceTree = "<group>"; };
+		OBJ_27 /* XCTestMatrixHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestMatrixHelpers.swift; sourceTree = "<group>"; };
+		OBJ_29 /* ConjugateGradientOptimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConjugateGradientOptimizer.swift; sourceTree = "<group>"; };
+		OBJ_30 /* GradientDescentOptimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDescentOptimizer.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Optimizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optimizable.swift; sourceTree = "<group>"; };
+		OBJ_33 /* FileHandleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandleExtensions.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Plotting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plotting.swift; sourceTree = "<group>"; };
+		OBJ_36 /* FFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
+		OBJ_37 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		OBJ_38 /* Windowing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Windowing.swift; sourceTree = "<group>"; };
+		OBJ_40 /* ActivationFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationFunction.swift; sourceTree = "<group>"; };
+		OBJ_41 /* NeuralNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetwork.swift; sourceTree = "<group>"; };
+		OBJ_42 /* NeuralNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkLayer.swift; sourceTree = "<group>"; };
+		OBJ_43 /* NeuralNetworkOptimizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkOptimizable.swift; sourceTree = "<group>"; };
+		OBJ_46 /* NeuralNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuralNetworkTests.swift; sourceTree = "<group>"; };
+		OBJ_47 /* XCTestMatrixHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestMatrixHelpers.swift; sourceTree = "<group>"; };
+		OBJ_49 /* Linear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Linear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_50 /* Optimization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Optimization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_51 /* Plotting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Plotting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_52 /* SignalProcessing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SignalProcessing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_53 /* NeuralNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NeuralNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_54 /* NeuralNetworkTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeuralNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_118 /* Linear.framework in Frameworks */,
+				OBJ_119 /* Optimization.framework in Frameworks */,
+				OBJ_120 /* Plotting.framework in Frameworks */,
+				OBJ_121 /* SignalProcessing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_134 /* Linear.framework in Frameworks */,
+				OBJ_135 /* Optimization.framework in Frameworks */,
+				OBJ_136 /* Plotting.framework in Frameworks */,
+				OBJ_137 /* SignalProcessing.framework in Frameworks */,
+				OBJ_138 /* NeuralNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_89 /* Linear.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_28 /* Optimization */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_29 /* ConjugateGradientOptimizer.swift */,
+				OBJ_30 /* GradientDescentOptimizer.swift */,
+				OBJ_31 /* Optimizable.swift */,
+			);
+			name = Optimization;
+			path = "Packages/SwiftNum-1.9.3/Sources/Optimization";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_32 /* Plotting */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* FileHandleExtensions.swift */,
+				OBJ_34 /* Plotting.swift */,
+			);
+			name = Plotting;
+			path = "Packages/SwiftNum-1.9.3/Sources/Plotting";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* SignalProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* FFT.swift */,
+				OBJ_37 /* IntExtensions.swift */,
+				OBJ_38 /* Windowing.swift */,
+			);
+			name = SignalProcessing;
+			path = "Packages/SwiftNum-1.9.3/Sources/SignalProcessing";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_39 /* NeuralNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* ActivationFunction.swift */,
+				OBJ_41 /* NeuralNetwork.swift */,
+				OBJ_42 /* NeuralNetworkLayer.swift */,
+				OBJ_43 /* NeuralNetworkOptimizable.swift */,
+			);
+			name = NeuralNetwork;
+			path = Sources/NeuralNetwork;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_44 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_45 /* NeuralNetworkTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		OBJ_45 /* NeuralNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_46 /* NeuralNetworkTests.swift */,
+				OBJ_47 /* XCTestMatrixHelpers.swift */,
+			);
+			name = NeuralNetworkTests;
+			path = Tests/NeuralNetworkTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_49 /* Linear.framework */,
+				OBJ_50 /* Optimization.framework */,
+				OBJ_51 /* Plotting.framework */,
+				OBJ_52 /* SignalProcessing.framework */,
+				OBJ_53 /* NeuralNetwork.framework */,
+				OBJ_54 /* NeuralNetworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_44 /* Tests */,
+				OBJ_48 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* Linear */,
+				OBJ_28 /* Optimization */,
+				OBJ_32 /* Plotting */,
+				OBJ_35 /* SignalProcessing */,
+				OBJ_39 /* NeuralNetwork */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		OBJ_8 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Matrix.swift */,
+				OBJ_10 /* MatrixAddition.swift */,
+				OBJ_11 /* MatrixComponentWiseFunction.swift */,
+				OBJ_12 /* MatrixConcatenation.swift */,
+				OBJ_13 /* MatrixCreation.swift */,
+				OBJ_14 /* MatrixCustomStringConvertible.swift */,
+				OBJ_15 /* MatrixDivision.swift */,
+				OBJ_16 /* MatrixEquatableComparable.swift */,
+				OBJ_17 /* MatrixInverse.swift */,
+				OBJ_18 /* MatrixIO.swift */,
+				OBJ_19 /* MatrixMisc.swift */,
+				OBJ_20 /* MatrixMultiplication.swift */,
+				OBJ_21 /* MatrixRandom.swift */,
+				OBJ_22 /* MatrixRowsAndColumns.swift */,
+				OBJ_23 /* MatrixSubscripting.swift */,
+				OBJ_24 /* MatrixSubtraction.swift */,
+				OBJ_25 /* MatrixSum.swift */,
+				OBJ_26 /* MatrixTransposition.swift */,
+				OBJ_27 /* XCTestMatrixHelpers.swift */,
+			);
+			name = Linear;
+			path = "Packages/SwiftNum-1.9.3/Sources/Linear";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		OBJ_108 /* NeuralNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_109 /* Build configuration list for PBXNativeTarget "NeuralNetwork" */;
+			buildPhases = (
+				OBJ_112 /* Sources */,
+				OBJ_117 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_122 /* PBXTargetDependency */,
+				OBJ_123 /* PBXTargetDependency */,
+				OBJ_124 /* PBXTargetDependency */,
+				OBJ_125 /* PBXTargetDependency */,
+			);
+			name = NeuralNetwork;
+			productName = NeuralNetwork;
+			productReference = OBJ_53 /* NeuralNetwork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_126 /* NeuralNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_127 /* Build configuration list for PBXNativeTarget "NeuralNetworkTests" */;
+			buildPhases = (
+				OBJ_130 /* Sources */,
+				OBJ_133 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_139 /* PBXTargetDependency */,
+				OBJ_140 /* PBXTargetDependency */,
+				OBJ_141 /* PBXTargetDependency */,
+				OBJ_142 /* PBXTargetDependency */,
+				OBJ_143 /* PBXTargetDependency */,
+			);
+			name = NeuralNetworkTests;
+			productName = NeuralNetworkTests;
+			productReference = OBJ_54 /* NeuralNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		OBJ_55 /* Linear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_56 /* Build configuration list for PBXNativeTarget "Linear" */;
+			buildPhases = (
+				OBJ_59 /* Sources */,
+				OBJ_79 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Linear;
+			productName = Linear;
+			productReference = OBJ_49 /* Linear.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_80 /* Optimization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_81 /* Build configuration list for PBXNativeTarget "Optimization" */;
+			buildPhases = (
+				OBJ_84 /* Sources */,
+				OBJ_88 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_90 /* PBXTargetDependency */,
+			);
+			name = Optimization;
+			productName = Optimization;
+			productReference = OBJ_50 /* Optimization.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_91 /* Plotting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_92 /* Build configuration list for PBXNativeTarget "Plotting" */;
+			buildPhases = (
+				OBJ_95 /* Sources */,
+				OBJ_98 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plotting;
+			productName = Plotting;
+			productReference = OBJ_51 /* Plotting.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_99 /* SignalProcessing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_100 /* Build configuration list for PBXNativeTarget "SignalProcessing" */;
+			buildPhases = (
+				OBJ_103 /* Sources */,
+				OBJ_107 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignalProcessing;
+			productName = SignalProcessing;
+			productReference = OBJ_52 /* SignalProcessing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftLearn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_55 /* Linear */,
+				OBJ_80 /* Optimization */,
+				OBJ_91 /* Plotting */,
+				OBJ_99 /* SignalProcessing */,
+				OBJ_108 /* NeuralNetwork */,
+				OBJ_126 /* NeuralNetworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_104 /* FFT.swift in Sources */,
+				OBJ_105 /* IntExtensions.swift in Sources */,
+				OBJ_106 /* Windowing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_113 /* ActivationFunction.swift in Sources */,
+				OBJ_114 /* NeuralNetwork.swift in Sources */,
+				OBJ_115 /* NeuralNetworkLayer.swift in Sources */,
+				OBJ_116 /* NeuralNetworkOptimizable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_131 /* NeuralNetworkTests.swift in Sources */,
+				OBJ_132 /* XCTestMatrixHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_60 /* Matrix.swift in Sources */,
+				OBJ_61 /* MatrixAddition.swift in Sources */,
+				OBJ_62 /* MatrixComponentWiseFunction.swift in Sources */,
+				OBJ_63 /* MatrixConcatenation.swift in Sources */,
+				OBJ_64 /* MatrixCreation.swift in Sources */,
+				OBJ_65 /* MatrixCustomStringConvertible.swift in Sources */,
+				OBJ_66 /* MatrixDivision.swift in Sources */,
+				OBJ_67 /* MatrixEquatableComparable.swift in Sources */,
+				OBJ_68 /* MatrixInverse.swift in Sources */,
+				OBJ_69 /* MatrixIO.swift in Sources */,
+				OBJ_70 /* MatrixMisc.swift in Sources */,
+				OBJ_71 /* MatrixMultiplication.swift in Sources */,
+				OBJ_72 /* MatrixRandom.swift in Sources */,
+				OBJ_73 /* MatrixRowsAndColumns.swift in Sources */,
+				OBJ_74 /* MatrixSubscripting.swift in Sources */,
+				OBJ_75 /* MatrixSubtraction.swift in Sources */,
+				OBJ_76 /* MatrixSum.swift in Sources */,
+				OBJ_77 /* MatrixTransposition.swift in Sources */,
+				OBJ_78 /* XCTestMatrixHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_85 /* ConjugateGradientOptimizer.swift in Sources */,
+				OBJ_86 /* GradientDescentOptimizer.swift in Sources */,
+				OBJ_87 /* Optimizable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_96 /* FileHandleExtensions.swift in Sources */,
+				OBJ_97 /* Plotting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_122 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_55 /* Linear */;
+			targetProxy = 5058EE921E23765E0092406D /* PBXContainerItemProxy */;
+		};
+		OBJ_123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_80 /* Optimization */;
+			targetProxy = 5058EE931E23765E0092406D /* PBXContainerItemProxy */;
+		};
+		OBJ_124 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_91 /* Plotting */;
+			targetProxy = 5058EE941E23765E0092406D /* PBXContainerItemProxy */;
+		};
+		OBJ_125 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_99 /* SignalProcessing */;
+			targetProxy = 5058EE951E23765E0092406D /* PBXContainerItemProxy */;
+		};
+		OBJ_139 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_55 /* Linear */;
+			targetProxy = 5058EE961E23765E0092406D /* PBXContainerItemProxy */;
+		};
+		OBJ_140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_80 /* Optimization */;
+			targetProxy = 5058EE971E23765E0092406D /* PBXContainerItemProxy */;
+		};
+		OBJ_141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_91 /* Plotting */;
+			targetProxy = 5058EE981E23765E0092406D /* PBXContainerItemProxy */;
+		};
+		OBJ_142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_99 /* SignalProcessing */;
+			targetProxy = 5058EE991E23765E0092406D /* PBXContainerItemProxy */;
+		};
+		OBJ_143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_108 /* NeuralNetwork */;
+			targetProxy = 5058EE9A1E23765E0092406D /* PBXContainerItemProxy */;
+		};
+		OBJ_90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_55 /* Linear */;
+			targetProxy = 5058EE911E23765E0092406D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/SignalProcessing_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SignalProcessing;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = SignalProcessing;
+			};
+			name = Debug;
+		};
+		OBJ_102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/SignalProcessing_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SignalProcessing;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = SignalProcessing;
+			};
+			name = Release;
+		};
+		OBJ_110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/NeuralNetwork_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = NeuralNetwork;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = NeuralNetwork;
+			};
+			name = Debug;
+		};
+		OBJ_111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/NeuralNetwork_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = NeuralNetwork;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = NeuralNetwork;
+			};
+			name = Release;
+		};
+		OBJ_128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/NeuralNetworkTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = NeuralNetworkTests;
+			};
+			name = Debug;
+		};
+		OBJ_129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/NeuralNetworkTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = NeuralNetworkTests;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/Linear_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Linear;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = Linear;
+			};
+			name = Debug;
+		};
+		OBJ_58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/Linear_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Linear;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = Linear;
+			};
+			name = Release;
+		};
+		OBJ_82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/Optimization_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Optimization;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = Optimization;
+			};
+			name = Debug;
+		};
+		OBJ_83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/Optimization_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Optimization;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = Optimization;
+			};
+			name = Release;
+		};
+		OBJ_93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/Plotting_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Plotting;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = Plotting;
+			};
+			name = Debug;
+		};
+		OBJ_94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftLearn.xcodeproj/Plotting_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Plotting;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = Plotting;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_100 /* Build configuration list for PBXNativeTarget "SignalProcessing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_101 /* Debug */,
+				OBJ_102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_109 /* Build configuration list for PBXNativeTarget "NeuralNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_110 /* Debug */,
+				OBJ_111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_127 /* Build configuration list for PBXNativeTarget "NeuralNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_128 /* Debug */,
+				OBJ_129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "SwiftLearn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_56 /* Build configuration list for PBXNativeTarget "Linear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_57 /* Debug */,
+				OBJ_58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_81 /* Build configuration list for PBXNativeTarget "Optimization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_82 /* Debug */,
+				OBJ_83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_92 /* Build configuration list for PBXNativeTarget "Plotting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_93 /* Debug */,
+				OBJ_94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
