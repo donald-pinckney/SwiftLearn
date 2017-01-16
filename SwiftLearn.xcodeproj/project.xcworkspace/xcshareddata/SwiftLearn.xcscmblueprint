@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3E04B8EC9C597306F8D08AEFE2B2FB683CA9B922",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3E04B8EC9C597306F8D08AEFE2B2FB683CA9B922" : 9223372036854775807,
+    "69BF71C13E9243ACB0B2C0FBA5C7599138F4667C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1A6054E4-403F-4314-8DEF-72A2CB38FF7A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3E04B8EC9C597306F8D08AEFE2B2FB683CA9B922" : "SwiftLearn\/",
+    "69BF71C13E9243ACB0B2C0FBA5C7599138F4667C" : "SwiftLearn\/Packages\/SwiftNum-1.9.7\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftLearn",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftLearn.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/donald-pinckney\/SwiftLearn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E04B8EC9C597306F8D08AEFE2B2FB683CA9B922"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/donald-pinckney\/SwiftNum",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "69BF71C13E9243ACB0B2C0FBA5C7599138F4667C"
+    }
+  ]
+}
